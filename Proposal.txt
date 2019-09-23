@@ -1,0 +1,13 @@
+At its core it will be a typing game similar to Typing of the Dead except it will be in a versus mode format. A human player (we will try to get multiplayer functionality) will either battle another player or a bot. A random word will be dropped down from a word bank, damage will depend on the size of the word and the difficulty associated with it typing it. The player who types the word first will deal damage and the opportunity to use a word that has already been typed by another player will not be possible.
+
+We were brain-storming about other features such as saving successfully typed words into a power bar to burst an enemy at once with multiple words or possibly giving your opponent a chance to block an attack if your opponent types the word fast enough given a major time penalty but this is for future consideration.
+
+Team:
+
+Nathan Yee
+
+Moustapha Said
+
+Darren Vu
+
+Tommy Huynh
