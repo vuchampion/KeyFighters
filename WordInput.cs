@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class WordInput : MonoBehaviour{
 
-  public WordManager wordManager;
+ public WordManager wordManager;
+ 
     // Update is called onceper frame
     void Update()
     {
         foreach( char letter in Input.inputString)
         {
-            wordManager.TypeLetter(letter);
+           wordManager.TypeLetter(letter);
+
+      //    Debug.Log(letter); // gets the input from keyboard and displays ti
         }
     }
 }
