@@ -5,6 +5,8 @@ using UnityEngine;
 public class WordManager : MonoBehaviour{
 
       public List<Word>  words;
+      public WordSpawner wordSpawner;
+
 
       private bool hasActiveWord;
       private Word activeWord;   // sotres the ActiveWord
@@ -16,13 +18,14 @@ public class WordManager : MonoBehaviour{
       AddWord();
       AddWord();
       AddWord();
+      AddWord(); 
 
     }
 
      public void AddWord()
       {
 
-        Word word = new Word(WordGenerator.GetRandomWord());
+        Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
         Debug.Log(word.word);
 
         words.Add(word);

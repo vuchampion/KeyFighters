@@ -5,7 +5,7 @@ using UnityEngine;
 public class WordInput : MonoBehaviour{
 
  public WordManager wordManager;
- 
+
     // Update is called onceper frame
     void Update()
     {

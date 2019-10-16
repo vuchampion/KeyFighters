@@ -9,10 +9,15 @@ public class Word{
     public string word;
     private int typeIndex;
 
-    public Word (string _word)
+    WordDisplay display;
+
+    public Word (string _word, WordDisplay _display)
     {
        word = _word;
        typeIndex=0;
+
+       display = _display;
+       display.SetWord(word);
 
     }
 
@@ -26,6 +31,7 @@ public class Word{
     public void TypeLetter()
     {
         typeIndex++;  // Remove the lettter on screen
+        display.RemoveLetter();
     }
 
     public bool WordTyped()
@@ -34,9 +40,10 @@ public class Word{
         if(wordTyped)
         {
             // Remove word on screen
+            display.RemoveWord(); 
 
         }
-        return wordTyped; 
+        return wordTyped;
     }
 
 }
